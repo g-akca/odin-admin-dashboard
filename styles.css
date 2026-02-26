@@ -2,13 +2,14 @@
 :root {
     --blue: rgb(62, 147, 212);
     --orange: rgb(255, 221, 0);
+    --gray: rgb(230, 230, 233);
 }
 
 /* General Styles */
 body {
     display: grid;
     grid-template-columns: clamp(210px, 20vw, 250px) 1fr;
-    grid-template-rows: 125px auto;
+    grid-template-rows: 140px auto;
     min-height: 100vh;
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -28,7 +29,7 @@ body {
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 12px;
-    margin-bottom: 36px;
+    margin-bottom: 42px;
 }
 
 #sidebar-top svg {
@@ -55,7 +56,7 @@ nav {
 
 .nav-list li {
     display: grid;
-    grid-template-columns: 20px 1fr;
+    grid-template-columns: 20px auto;
     align-items: center;
     gap: 20px;
     font-weight: bold;
@@ -67,8 +68,106 @@ header {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 2;
+    padding: 4px 54px 10px 36px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 14px;
+}
+
+#header-top {
+    display: grid;
+    grid-template-columns: auto 230px;
+    column-gap: clamp(25px, 8vw, 100px);
+}
+
+#header-top div {
+    display: flex;
+    align-items: center;
+}
+
+#search-icon {
+    height: 20px;
+}
+
+#search-bar {
+    border: none;
+    background-color: var(--gray);
+    margin-left: 15px;
+    padding: 4px 16px;
+    border-radius: 13px;
+    width: 100%;
+}
+
+#user-top {
+    display: grid;
+    column-gap: 22px;
+}
+
+#notif-icon {
+    height: 18px;
+}
+
+#user-top .user-icon {
+    height: 36px;
+    border-radius: 100%;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+#header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+#user-info {
+    display: grid;
+    column-gap: 32px;
+    grid-template-columns: 40px auto;
+}
+
+#user-info .user-icon {
+    height: 56px;
+    border-radius: 100%;
+}
+
+#user-info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+
+#user-info p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+#user-info .user-name {
+    font-size: 1.3rem;
+}
+
+#btns {
+    display: grid;
+    grid-template-columns: 85px 85px 85px;
+    column-gap: 22px;
+}
+
+#btns button {
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    padding: 9px 0;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 main {
-    background-color: rgb(230, 230, 233);
+    background-color: var(--gray);
 }
