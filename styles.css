@@ -195,6 +195,15 @@ main h2 {
     grid-area: proj;
 }
 
+#announcements-section {
+    grid-area: anno;
+}
+
+#trending-section {
+    grid-area: trend;
+}
+
+/* Projects Section Styles */
 #projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -206,7 +215,7 @@ main h2 {
     background-color: white;
     border-radius: 6px;
     border-left: 6px solid var(--orange);
-    padding: 24px 18px 20px 18px;
+    padding: 25px 18px 21px 18px;
     display: grid;
     grid-template-rows: 20px auto 20px;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
@@ -234,26 +243,33 @@ main h2 {
     cursor: pointer;
 }
 
-#announcements-section {
-    grid-area: anno;
-}
-
+/* Announcements Section Styles */
 #announcements-grid {
     display: grid;
     grid-template-rows: auto auto auto;
     background-color: white;
     border-radius: 6px;
-    padding: 20px 24px;
+    padding: 10px 24px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .announcement-div:not(:last-child) {
     border-bottom: 1px solid rgb(210, 210, 210);
 }
 
-#trending-section {
-    grid-area: trend;
+.announcement-title {
+    margin: 14px 0 1px;
+    font-weight: bold;
+    font-size: 0.8rem;
 }
 
+.announcement-desc {
+    margin: 0 0 14px;
+    font-size: 0.65rem;
+    color: gray;
+}
+
+/* Trending Section Styles */
 #trending-grid {
     display: grid;
     grid-template-rows: auto auto auto auto;
