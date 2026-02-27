@@ -273,6 +273,36 @@ main h2 {
 #trending-grid {
     display: grid;
     grid-template-rows: auto auto auto auto;
+    align-items: center;
+    row-gap: 16px;
     background-color: white;
-    border-radius: 6px
+    border-radius: 6px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+    padding: 18px;
+}
+
+.trend-div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 16px;
+}
+
+.trend-div .user-icon {
+    height: 38px;
+    border-radius: 100%;
+}
+
+.trend-div div {
+    align-self: center;
+}
+
+.trend-name {
+    margin: 0 0 2px;
+    font-size: 0.8rem;
+}
+
+.trend-desc {
+    margin: 0;
+    color: gray;
+    font-size: 0.8rem;
 }
