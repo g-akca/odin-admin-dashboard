@@ -10,7 +10,7 @@ body {
     display: grid;
     grid-template-columns: clamp(210px, 20vw, 250px) 1fr;
     grid-template-rows: 135px 1fr;
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -23,6 +23,11 @@ body {
     padding: 12px;
     color: white;
     letter-spacing: 0.25px;
+    position: sticky;
+    top: 0;
+    align-self: start;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 #sidebar-top {
